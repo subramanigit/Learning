@@ -65,3 +65,26 @@
 tr:nth-child(odd){
     background-color: coral;
 }
+
+#rax {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:	lightgreen;
+}
+
+#rana {
+  float: left;
+}
+
+#gone {
+  display: block;
+  color:white ;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ a:hover{
+  background-color:teal;
+}
