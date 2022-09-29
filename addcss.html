@@ -5,139 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      * {
-        background-color: cornsilk;
-        font-family:Arial, Helvetica, sans-serif;
-      }
-
-      .classselect {
-        border: 3px solid black;
-        color: white;
-        height: 250px;
-        width: 250px;
-        background-color: #6b9400;
-        text-align: center;
-        font-size: 25px;
-      }
-
-      .idselect {
-        border: 5px solid black;
-        color: white;
-        height: 250px;
-        width: 100%;
-        background-color: rgb(37, 99, 71);
-        text-align: center;
-        font-weight: bolt;
-        font-size: 35px;
-      }
-
-     #h2 {
-     font-family: Arial, Helvetica, sans-serif;
-     color:black;
-      }
-
-      .bda {
-        background-image: url('./images/nature.jpg');
-        height: 500px;
-        width: 500px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
-      #db {
-        border:4px;
-        border-style:dotted;
-        border-width:8px;
-        text-align: center;
-      }
-      #dd {
-        border:4px;
-        border-style:double;
-        border-top-left-radius:12px;
-        border-bottom-right-radius:12px;
-        text-align: center;
-      }
-      #dr {
-        border:6px;
-        border-style:ridge;
-        border-color:orange;
-        text-align: center;
-        
-      }
-      #ds {
-        border: 4px groove green;
-        text-align: center;
-      
-      }
-
-      #os {
-        border: 9px;
-        border-style:dotted;
-        border-width:6px;
-        text-align: center;
-        outline-style: dashed;
-
-      }
-
-      #oc {
-        border: 3px solid black;
-        outline-style: solid;
-        outline-color: red;
-        outline-width: thin;
-        text-align:center;
-
-      }
-      #osh {
-        border: 9px groove green;
-        text-align: center;
-        
-      }
-
-      #of {
-        margin: 30px;
-        background:lightslategrey;
-        border: 1.5px solid black;
-        outline: 3px solid greenyellow;
-        outline-offset: 25px;
-        text-align:center;
-      }
-
-      #mn {
-        border:5px solid black;
-        background-color: azure;
-        margin-top:80px;
-        margin-right:50px;
-        margin-bottom:80px;
-        margin-left:80px;
-        width:300px;
-        height: 150px;
-        
-      }
-     #pd   { 
-        border:5px solid black;
-        background-color: azure;
-        padding-top:60px;
-        padding-right: 20px;
-        padding-bottom:60px;
-        padding-left:60px;
-     }
-    
-    #div p {
-      background-color: yellow;
-    }
-    #div + p {
-  background-color: yellow;
-}
-#div > p {
-  background-color: yellow;
-}
-    
-    </style>
+    <link href="css/style-1.css" rel="stylesheet">
   </head>
+
   <body>
-    <div style="font-size: 35px; color: green; font-weight: bold;">
-      Css Syntax = h1 {color:blue;font:35px}
+
+    <div style="margin-top:20px;"></div>
+
+    <br>
+    <ul class="topic" style="font-weight:bold;">
+    <li class="von";><a class="vux" href="./addjs.html">J.S Exercise</a></li>
+    </ul>
+
+    <ul class="htopic1" style="font-weight:bold;">
+    <li class="von";><a class="vux" href="./index.html">HTML Exercise</a></li>
+    </ul>
+     
+    <ul class="htopic2" style="font-weight:bold;">
+    <li class="von";><a class="vux" href="https://github.com/subramanigit/Learning/blob/main/addcss.html" target="_blank">Css Code</a></li>
+    </ul>
+    </br>
+    <div>
+    <div style="font-size: 35px; color: green; font-weight: bold;margin-top:100px">
+    Css Syntax = h1 {color:blue;font:35px}
     </div>
     <br />
     <br />
@@ -151,6 +41,7 @@
       Blue - Value
       <br />
     </div>
+  
     <h2>ELement Select</h2>
     <p>Universal Selector - Font:Arial, Helvetica, sans-serif,backgroundcolor</p>
     <p class="classselect">Css Selectors- Class</p>
@@ -209,9 +100,10 @@
   <h2>Css Padding</h2>
   <p id="pd">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
-  <div id ="div p">
+
+<section>
+   <h2>Css Cominators- Descendant Selector</h2>
   <div>
-    <h2>Css Combinators- Descendant Selector </h2>
     <p>Paragraph 1 in the div.</p>
     <p>Paragraph 2 in the div.</p>
     <section><p>Paragraph 3 in the div.</p></section>
@@ -219,28 +111,12 @@
   
   <p>Paragraph 4. Not in a div.</p>
   <p>Paragraph 5. Not in a div.</p>
-</div>
 
-<div id ="div > p">
-
-  <div>
-    <p>Paragraph 1 in the div.</p>
-    <p>Paragraph 2 in the div.</p>
-    <section>
-      <!-- not Child but Descendant -->
-      <p>Paragraph 3 in the div (inside a section element).</p>
-    </section>
-    <p>Paragraph 4 in the div.</p>
-  </div>
-  
-  <p>Paragraph 5. Not in a div.</p>
-  <p>Paragraph 6. Not in a div.</p>
-
-</div>
+</section>
 
 
-  </body>
-  </html>
+</body>
+</html>
   
 
 
