@@ -151,8 +151,7 @@ function weightFn(myWeight) {
     
   
     
-    //document.getElementById("task18").innerHTML = myFunction("John Cena");
-
+    document.getElementById("task18").innerHTML = myFunction("John Cena");
     function myFunction(name) {
     return "Hello " + name;
     }

@@ -66,25 +66,62 @@ tr:nth-child(odd){
     background-color: coral;
 }
 
-#rax {
+
+.rax {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color:	lightgreen;
+  width:20%;
+  margin-left:10%;
+  margin-right:auto;
+  float:left;
+ }
+
+.css4 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:	lightgreen;
+  width:20%;
+  margin-left:10%;
+  margin-right:auto;
+  float:left;
+ }
+
+.js4 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:	lightgreen;
+  width:20%;
+  display:block;
+  margin-left:10%;
+  margin-right:auto;
+  float:left;
+ }
+
+
+
+  .rana {
+  text-align:center;
+  font-size:30px;
+  font-weight:bold;
+  color:white;
+
+  }
+
+  .gone {
+display: block;
+color:black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+a:hover{
+background-color:teal;
 }
 
-#rana {
-  float: left;
-}
-
-#gone {
-  display: block;
-  color:white ;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
- a:hover{
-  background-color:teal;
-}
