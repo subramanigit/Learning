@@ -28,7 +28,8 @@
   thirdName  : "Dhoni",
   age1     : 39,
 };
-  document.getElementById("task6").innerHTML = person.firstName1 + " " + person.secondName2 + " " + person.thirdName + " is " + person.age1 + " old";
+  
+document.getElementById("task6").innerHTML = person.firstName1 + " " + person.secondName2 + " " + person.thirdName + " is " + person.age1 + " old";
 
 document.getElementById("task7").innerHTML = 
 typeof "" + "<br>" +
@@ -62,6 +63,20 @@ document.getElementById("task11").innerHTML = "Good evening!";
 } else {
 document.getElementById("task11").innerHTML = "Good night!"; 
 }
+ 
+const age1 = 5 ;
+
+if (age1 <= 6) {
+document.getElementById("task111").innerHTML = "Child";
+} if (age1 <= 12) {
+document.getElementById("task111").innerHTML = "Child1";
+}
+if (age1 <= 15) {
+  document.getElementById("task111").innerHTML = "Child2";
+  }
+else {
+    document.getElementById("task111").innerHTML = "adult";
+    }
 
 
 
@@ -163,3 +178,37 @@ function weightFn(myWeight) {
     function lorry(a, b) {
     return "lorry has " + a + b + " wheel";   
     } 
+
+    const vehicle = ["Bicycle","Bike","Car","Bus","Train","Aeroplane"];
+    
+    let text99 = " ";
+    for (i=0; i < vehicle.length; i++ )  {
+      text99 += vehicle[i] + "<br>"
+    }
+
+    document.getElementById("forloop").innerHTML = text99;
+    
+    let text1 = "";
+    for (let i=0; i < 10; i++) {
+       text1 += "The number is " + i + "<br>"
+    }
+    document.getElementById("forloop2").innerHTML = text1;
+
+    let q = 0;
+    let text22 = "";
+    
+    while (q < 6) {
+      text22 += "<br>The number is " + q ; 
+      q++;
+    } 
+    document.getElementById("whileloop").innerHTML = text22;
+
+    let xn = 0;
+    let text32 = "";
+    
+    do {
+      text32 += "<br>The number is " + xn ; 
+      xn++;
+    } while (xn > 6)
+    document.getElementById("dowhileloop").innerHTML = text32;
+
