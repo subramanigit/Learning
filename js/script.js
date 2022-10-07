@@ -64,14 +64,14 @@ document.getElementById("task11").innerHTML = "Good evening!";
 document.getElementById("task11").innerHTML = "Good night!"; 
 }
  
-const age1 = 5 ;
+const age1 = 16 ;
 
-if (age1 <= 6) {
+if (age1 < 6) {
 document.getElementById("task111").innerHTML = "Child";
-} if (age1 <= 12) {
+} if (age1 < 12) {
 document.getElementById("task111").innerHTML = "Child1";
 }
-if (age1 <= 15) {
+if (age1 < 15) {
   document.getElementById("task111").innerHTML = "Child2";
   }
 else {
@@ -95,6 +95,7 @@ document.getElementById("task12").innerHTML = final1
 function crank(ck,ce) {
 result = ck * ce
 }
+
 crank(44, 2)
 document.getElementById("task13").innerHTML = result
 
@@ -212,3 +213,45 @@ function weightFn(myWeight) {
     } while (xn > 6)
     document.getElementById("dowhileloop").innerHTML = text32;
 
+    
+    let element1 = document.getElementById("v1");
+
+    document.getElementById("domid").innerHTML = "The text from the id is " + element1.innerHTML;
+
+    let element2 = document.getElementsByClassName("domclass");
+
+    document.getElementById("domid2").innerHTML = "The text from class is " +element2[1].innerHTML + " with index of [1]";
+    
+    let x111 = document.getElementById("domtag");
+    let y111 = x111.getElementsByTagName("p");
+    
+    document.getElementById("domid3").innerHTML = "The text from class is " + y111[0].innerHTML + " with index of [0]";
+
+    let num = document.getElementsByName("bike").length;
+    document.getElementById("domid4").innerHTML = num;
+    
+    function myalert() {
+      alert("You are in a danger state");
+    }
+    
+    function myconfirm () {
+      confirm("Awesome")
+    }
+    
+    function myprint () {
+      print("")
+    }
+    
+    function windowopen() {
+      window.open("https://eangadi.in/")
+    }
+
+    document.getElementById("screen").innerHTML = screen.height ;
+
+    document.getElementById("location").innerHTML = window.location.href ;
+
+    const timeout = setTimeout(birthday, 2000);
+
+    function birthday() {
+    document.getElementById("settime").innerHTML = "Happy Birthday!"
+    }
