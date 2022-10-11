@@ -320,6 +320,46 @@ cursor:pointer;
   background-color:rgb(255, 173, 27);
   text-align:center;
   font-size:20px;
-  padding: 10px;
-  
+  padding: 10px; 
 }
+
+#keyframe {
+
+  width:50px;
+  height:50px;
+  background-color:lightgreen;
+  position:relative;
+  animation: movingbox 5s infinite;
+}
+
+
+@keyframes movingbox {
+ 
+  0% {top:0px; left:0px; background-color:lightgreen;}
+  25%{top:100px; left:0px; background-color:rgb(144, 153, 238);}
+  50%{top:100px; left:80%; background-color:rgb(228, 31, 57);}
+  75%{top:0px; left:80%; background-color:rgb(253, 250, 43);}
+  100%{top:0px; left:0px; background-color:rgb(248, 18, 229);}
+}
+
+
+.media {
+  width:100%;
+  padding:30px;
+  box-sizing:border-box;
+  background-color:orange;
+  }
+  
+  
+  
+  @media screen and (min-width: 400px) {
+  .media {
+      background-color: lightgreen;
+    }
+  }
+  
+  @media screen and (min-width: 800px) {
+    .media {
+      background-color: lavender;
+    }
+  }
