@@ -199,8 +199,62 @@ background-color:teal;
         <p>Window Location</p>
         <p id="location"></p>
         
-        <p>Wait 5sec for the new year</p>
+        <p>Wait 2sec for the new year</p>
         <p id="settime"></p>
+
+        
+        <h2>Javascript Events</h2>
+        <p>Click Event</p>
+        <button onclick="clickevent()">Submit</button>
+       
+        <p>Double Click Event</p>
+        <p ondblclick="dblclickevent()">Double click the content to see the output</p>
+        
+        <p>MouseOver</p>
+        
+        <p onmouseover="mouseover()">Keep cursor over me to see the alert message</p>
+
+        <p>Mouseout</p>
+        
+        <img src="C:\Users\6S-LAP-0006\Learning\images\emojilaugh-emoji.gif" onmouseout="mouseout(this)" onmouseover="mouseover1(this)" style="height:150px;width:150px;">
+   
+        <p>Keyup</p>
+
+        Enter Your Name : <input type="text" id="kp" onkeyup="keyuppractice()">
+        <p>Your Name Is : <span id="simpledemo"></p>
+
+        <p>keydown</p>
+
+        <input type="text" onkeydown="keydownpractice()">
+      
+
+        <h2>Change Event</h2>
+
+        <select id="myOption" onchange="myFunction()" >
+          <option value="Audi">Audi</option>
+          <option value="BMW">BMW</option>
+          <option value="Mercedes">Mercedes</option>
+          <option value="Volvo">Volvo</option>
+        </select>
+        
+        </br>
+        </br>
+        </br>
+        
+        <form onchange="checkBox(event)">
+          <input type="checkbox" id="rr">Audi</input></br>
+          <input type="checkbox" id="vv">BMW</input></br>
+          <input type="checkbox" id="kk">Mercedes</input></br>
+          <input type="checkbox" id="qq">Volvo</input></br>
+        </form>
+        
+        <p>When you select a new car, a function is triggered which outputs the value of the selected car.</p>
+        
+        <p id="op1"></p>
+        <p id="ck1"></p>
+
+
+
 
         </section>
 

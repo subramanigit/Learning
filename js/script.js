@@ -255,3 +255,58 @@ function weightFn(myWeight) {
     function birthday() {
     document.getElementById("settime").innerHTML = "Happy Birthday!"
     }
+  
+    function clickevent() {
+      document.write("You have Clicked The Button")
+  }
+
+  function dblclickevent() {
+    document.write("Yeah ! You are right place")
+}
+
+function mouseover() {
+  alert("You have overed me")
+}
+
+function mouseover1(x) {
+  x.style.height = "50px";
+  x.style.width = "50px";
+
+}
+function mouseout(x) {
+  x.style.height = "150px";
+  x.style.width = "150px";
+
+}
+
+function keyuppractice() {
+  var x = document.getElementById("kp");
+  x.value = x.value.toUpperCase();
+  document.getElementById("simpledemo").innerHTML = x.value;
+}
+
+function keydownpractice() {
+  alert("You have pressed a key inside the inside field");
+}
+
+function myFunction() {
+  var x = document.getElementById("myOption").value;
+  document.getElementById("op1").innerHTML = "You selected: " + x;
+}
+
+ function checkBox(e) {
+
+ if(e.target.id=='rr'){
+    document.getElementById("ck1").innerHTML = "Audi car price starts at ₹ 35.00 Lakh and goes upto ₹ 2.23 Crore";
+ }
+
+if(e.target.id=='vv'){
+    document.getElementById("ck1").innerHTML = "BMW car price starts at Rs 41.45 Lakh for the cheapest model which is X1 and the price of most expensive model, which is M8 starts at Rs 2.23 Crore.";
+ }
+if(e.target.id=='kk'){
+    document.getElementById("ck1").innerHTML = "Mercedes-Benz car price starts at Rs 41.99 Lakh for the cheapest model which is A-Class Limousine and the price of most expensive model, which is Maybach";
+ }
+ if(e.target.id=='qq'){
+    document.getElementById("ck1").innerHTML = "Volvo car price starts at Rs 45.83 Lakh for the cheapest model which is XC40 and the price of most expensive model, which is XC90 starts at Rs 94.90 Lakh.";
+ }
+}
