@@ -310,3 +310,52 @@ if(e.target.id=='kk'){
     document.getElementById("ck1").innerHTML = "Volvo car price starts at Rs 45.83 Lakh for the cheapest model which is XC40 and the price of most expensive model, which is XC90 starts at Rs 94.90 Lakh.";
  }
 }
+
+
+
+class bike {
+  constructor (model, year) {
+    this.model = model;
+    this.year = year;
+  }
+}
+
+const myBike = new bike("R15-V4", 2022);
+
+document.getElementById("task20").innerHTML ="Yamaha introduced " + myBike.model + " in " + myBike.year;
+
+
+
+class Train {
+  constructor (name, year) {
+    this.name = name;
+    this.year = year;
+  }
+   age () {
+    let date = new Date();
+    return date.getFullYear () - this.year;
+   }
+}
+
+let myTrain = new Train ("Bullet", 2014);
+
+document.getElementById("task21").innerHTML = " Bullet Train was introduced before " + myTrain.age() + " years" ;
+
+ 
+const obj = JSON.parse('{"name":"Mahi", "age":30, "city":"New York" }');
+
+
+document.getElementById("task22").innerHTML = obj.name + " was " + obj.age + " old." + "He was living in the " + obj.city 
+
+
+const myJSON1 = '{"name":"John", "age":30, "cars":["Ford", "BMW", "Fiat"]}';
+const myObj = JSON.parse(myJSON1);
+
+document.getElementById("task23").innerHTML = myObj.cars[1];
+
+
+
+const myJsonAy = '{"name":"John", "age":30, "cars":["Ford", "BMW", "Fiat"]}';
+const dis = JSON.parse(myJsonAy);
+
+document.getElementById("task24").innerHTML = dis.cars[2];
