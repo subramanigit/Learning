@@ -7,6 +7,14 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .table {
+         text-align: center;    
+        } 
+
+    </style>
+
+
   </head>
 
   <body>
@@ -95,27 +103,78 @@
 
   
   
-<div>
-    
-  <h3>Bootstrap Card</h3>
-  <div class="card" style="width: 18rem;">
-  <img src=".\images\new-yamaha-r15-v4-racing-blue-price-in-india-2.jpg" class="card-img-top" alt="Card-img-cap">
+
+  <h3 style="text-align:center">Bootstrap Card</h3>
+  <div class="row justify-content-around">
+    <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
   
-  <div class="card-body">
+    <img src=".\images\new-yamaha-r15-v4-racing-blue-price-in-india-2.jpg" class="card-img-top" alt="Card-img-cap">
+  
+    <div class="card-body">
     <h4 class="card-title">Card title</h4>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-  <ul class="list-group list-group-flush">
+    </div>
+    <ul class="list-group list-group-flush">
     <li class="list-group-item">R15 V4</li>
     <li class="list-group-item">Gixxer V3</li>
     <li class="list-group-item">Dominor V3</li>
+    </ul>
+    <div class="card-body">
+    <a href="" class="card-link">Card Link</a>
+    <a href="" class="card-link">Another Link</a>
+    </div>
+</div>
+</div>
+<div class="col-md-3">
+  <div class="card" style="width: 18rem;">
+
+  <img src=".\images\new-yamaha-r15-v4-racing-blue-price-in-india-2.jpg" class="card-img-top" alt="Card-img-cap">
+
+  <div class="card-body">
+  <h4 class="card-title">Card title</h4>
+  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+  <li class="list-group-item">R15 V4</li>
+  <li class="list-group-item">Gixxer V3</li>
+  <li class="list-group-item">Dominor V3</li>
   </ul>
   <div class="card-body">
   <a href="" class="card-link">Card Link</a>
   <a href="" class="card-link">Another Link</a>
   </div>
-
 </div>
+</div>
+<div class="col-md-3">
+  <div class="card" style="width: 18rem;">
+
+  <img src=".\images\new-yamaha-r15-v4-racing-blue-price-in-india-2.jpg" class="card-img-top" alt="Card-img-cap">
+
+  <div class="card-body">
+  <h4 class="card-title">Card title</h4>
+  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+  <li class="list-group-item">R15 V4</li>
+  <li class="list-group-item">Gixxer V3</li>
+  <li class="list-group-item">Dominor V3</li>
+  </ul>
+  <div class="card-body">
+  <a href="" class="card-link">Card Link</a>
+  <a href="" class="card-link">Another Link</a>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
 </br>
 
 <div>
@@ -243,14 +302,56 @@
 </br>
 </br>
 
+<div class="container mt-3">
+  <h2>Bootstrap Forms</h2>
+    
+  <form class="row g-4">
+    <div class="col-md-6">
+      <label for="inputEmail">Email :</label>
+      <input type="email" class="form-control" id="inputEmail" placeholder="itzmesri@gmail.com">
+    </div>
+    <div class="col-md-6">
+      <label for="passwordfield">Password :</label>
+      <input type="password" class="form-control" id="passwordfield" placeholder="****9">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" >Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="Plot No.48, Aarti avanue, ">
+    </div>
+  
+    <div class="col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
 
+    <div class="col-md-2">
+      <label for="pincode" >Pincode</label>
+      <input type="text" class="form-control" id="pincode">
+    </div>
 
+    <div class="col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-select">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check me out
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+  </form>
+</div>
 
-
-
-
-
-
+</br>
 
 
 <h2>Bootstrap Table</h2>
@@ -287,8 +388,125 @@
       </tr>
     </div>
     </br>
+    
+    
+<br>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
+  <table class="container table table-bordered table-responsive table-striped table-hover ">
+    <thead>
+      <tr class="table-hover bg-primary">
+        <th>S.no</th>
+        <th class="table-active">Employee Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Salary</th>
+        <th>Joining Date</th>
+        <th>Department</th>
+        <th>Gender</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>1</td>
+      <td>018</td>
+      <td>Gautham</td>
+      <td>Ganesh</td>
+      <td>80000</td>
+      <td>15-11-2022</td>
+      <td>IT</td>
+      <td>Male</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>019</td>
+      <td>Antony</td>
+      <td>Irutharaj</td>
+      <td>90000</td>
+      <td>15-11-2022</td>
+      <td>HR</td>
+      <td>Male</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>020</td>
+      <td>Anu</td>
+      <td>Ravi</td>
+      <td>95000</td>
+      <td>15-11-2022</td>
+      <td>IT</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>021</td>
+      <td>Lalitha</td>
+      <td>Arun</td>
+      <td>96000</td>
+      <td>15-11-2022</td>
+      <td>IT</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>022</td>
+      <td>Renuka</td>
+      <td>Sri</td>
+      <td>95000</td>
+      <td>15-11-2022</td>
+      <td>IT</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>023</td>
+      <td>Parvati</td>
+      <td>Nair</td>
+      <td>96000</td>
+      <td>15-11-2022</td>
+      <td>IT</td>
+      <td>Female</td>
+    </tr>
+
+  </table>
+
+</hr>
 
 
-  </body>
-  </html>
+</body>
+</html>
